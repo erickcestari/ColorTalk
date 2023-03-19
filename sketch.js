@@ -3287,12 +3287,12 @@ function preload(){
   but_en = document.getElementById('en')
   but_talk = document.getElementById('but-talk')
   video = createCapture(constraints)
- 
+  size = 1.3;
 }
 
 function setup() {
   timer = -1
-  createCanvas(video.width, video.height);
+  createCanvas(video.width * size, video.height * size);
   nameColor = 'black'
   nameColorPt = 'preto'
   hexColor = '#000000'
@@ -3303,7 +3303,7 @@ function setup() {
 }
 
 function draw() {
-  resizeCanvas(video.width, video.height);
+  resizeCanvas(video.width * size, video.height * size);
   
   but_pt.onclick = function(){
      language = 'pt-br';
@@ -3319,9 +3319,9 @@ function draw() {
   background(0);
   strokeWeight(1);
   stroke('black')
-  image(video,0, 0, video.width, video.height);
-  line(width/2,0,video.width/2,height)
-  line(0,video.height/2,video.width,video.height/2)
+  image(video,0, 0, width, height);
+  line(width/2,0,width/2,height)
+  line(0,height/2,width,height/2)
   video.loadPixels()
   timer--
   but_talk.onclick = function(){
@@ -3361,7 +3361,7 @@ function draw() {
   text(`A cor é ${officialNameColor[1]} | ${nameColor[1]}: RGB ${r} ${g} ${b} ou em Hex: ${nameColor[0]} `,100, 100)
   square()
   strokeWeight(10);
-  point(video.width/2, video.height/2)
+  point(width/2, height/2)
   strokeWeight(0)
   fill(nameColor[0])
   document.body.style.background = nameColor[0]
