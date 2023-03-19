@@ -3286,6 +3286,7 @@ function preload(){
   but_pt = document.getElementById('pt')
   but_en = document.getElementById('en')
   but_talk = document.getElementById('but-talk')
+  textColor = document.getElementById('color')
   video = createCapture(constraints)
   size = 1.3;
 }
@@ -3358,12 +3359,10 @@ function draw() {
   }
   stroke(nameColor[0])
   fill('#000')
-  text(`A cor é ${officialNameColor[1]} | ${nameColor[1]}: RGB ${r} ${g} ${b} ou em Hex: ${nameColor[0]} `,100, 100)
-  square()
   strokeWeight(10);
   point(width/2, height/2)
   strokeWeight(0)
   fill(nameColor[0])
   document.body.style.background = nameColor[0]
-  square(30, 20, 55);
+  textColor.textContent = `A cor é ${officialNameColor[1]} | Uma cor ${nameColor[1]}: RGB ${r} ${g} ${b} | Hex: ${nameColor[0]} `
 }
