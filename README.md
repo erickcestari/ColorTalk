@@ -13,5 +13,5 @@ Pixel Color Detector requires a modern web browser with support for HTML5, JavaS
   <li>Go to the ColorTalk Detector website.</li>
   <li>Allow the Browser to Use the Camera</li>
   <li>Choose a Language by clicking on two Buttons: Portuguese, English</li>
-  <li>Now click 'Falar Cor' for the website to say the color in the center of the video/li>
+  <li>Now click on 'Falar cor' for the website to say the color of the center of the video</li>
 </ol>
