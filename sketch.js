@@ -1814,7 +1814,7 @@ var ntc = {
 ["151F4C", "Dark Blue"],
 ["1560BD", "Light Blue"],
 ["15736B", "Dark Green"],
-["161928", "Dark Gray"],
+["161928", "Dark Blue"],
 ["161D10", "Dark Brown"],
 ["162A40", "Dark Cyan"],
 ["163222", "Dark Green"],
@@ -1873,8 +1873,8 @@ var ntc = {
 ["26056A", "Dark Blue"],
 ["261105", "Dark Brown"],
 ["261414", "Dark Brown"],//------
-["262335", "Dark Gray"],
-["26283B", "Dark Gray"],
+["262335", "Dark Blue"],
+["26283B", "Dark Blue"],
 ["273A81", "Dark Blue"],
 ["27504B", "Dark Green"],
 ["278A5B", "Green"],
@@ -2456,7 +2456,7 @@ var ntc = {
 ["A26645", "Brown"],
 ["A2AAB3", "Gray"],
 ["A2AEAB", "Gray"],
-["A3807B", "Brown"],
+["A3807B", "Pink"],
 ["A397B4", "Gray"],
 ["A3E3ED", "Cyan"],
 ["A4A49D", "Dark Gray"],
@@ -2562,7 +2562,7 @@ var ntc = {
 ["B5D2CE", "Gray Cyan"],
 ["B5ECDF", "Cyan"],
 ["B6316C", "Dark Pink"],
-["B69D98", "Gray Brown"],
+["B69D98", "Gray Pink"],
 ["B6B095", "Gray Brown"],
 ["B6BAA4", "Gray"],
 ["B6D1EA", "Light Blue"],
@@ -3351,7 +3351,7 @@ function draw() {
             else{msg.text = nameColor[1]; window.speechSynthesis.speak(msg);}
           });
         }
-        else{msg.text =  officialNameColor[1]+ '. A Collor '+ nameColor[1]; window.speechSynthesis.speak(msg);}
+        else{msg.text =  officialNameColor[1]+ `. A ${nameColor[1]}Collor `; window.speechSynthesis.speak(msg);}
       } 
     }
   }
