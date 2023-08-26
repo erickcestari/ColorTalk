@@ -10,8 +10,12 @@
   font-weight: 400;
   font-style: normal
 }
+
 P{
-  margin-bottom: 30px;
+  margin-bottom: 15px;
+}
+.section p {
+  margin-bottom: 0px;
 }
 
 body {
@@ -121,17 +125,24 @@ button:hover {
 }
 
 .section{
- 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, 1600%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: VAR(--dark-bg);
+  flex-direction: column;
+  text-align: center;
+  width: 100vw;
+  font-size: 20px;
 }
 
 .section p{
   background: VAR(--dark-bg);
   width: 100%;
-  font-size: 20px;
+}
+
+.disclaimer {
+  color: #ffffff69;
+  font-size: 18px;
 }
 
 #git {
