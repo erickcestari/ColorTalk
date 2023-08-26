@@ -3309,13 +3309,11 @@ function draw() {
   but_pt.onclick = function(){
      language = 'pt-br';
      msg.lang = language
-     console.log(language)
   }
 
   but_en.onclick = function(){
     language = 'en';
     msg.lang = language
-    console.log(language)
  }
   background(0);
   strokeWeight(1);
@@ -3325,8 +3323,6 @@ function draw() {
   line(0,height/2,width,height/2)
   video.loadPixels()
   timer--
-
-  console.log(timer)
   
   talk = function(){
   
