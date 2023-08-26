@@ -3325,9 +3325,12 @@ function draw() {
   line(0,height/2,width,height/2)
   video.loadPixels()
   timer--
-  but_talk.onclick = function(){
+
+  console.log(timer)
   
-  timer += 240;
+  talk = function(){
+  
+    timer += 300;
   for(let i = 0; i < video.width; i++){
     for(let j = 0; j < video.height; j++){
       const pixelIndex = (i + j * video.width) * 4
@@ -3356,6 +3359,9 @@ function draw() {
     }
   }
   
+  }
+  if(timer < 0) {
+    talk()
   }
   stroke(nameColor[0])
   fill('#000')
